@@ -1,0 +1,19 @@
+<h2 class="text text-center text-secondary">lista de usuarios</h2>
+<article class="container-sm">
+  <table class="table table-hover ">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Usuario</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of listado">
+        <td>{{item.id}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.username}}</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
